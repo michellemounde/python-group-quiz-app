@@ -5,15 +5,13 @@ home = Blueprint('home', __name__)
 
 @home.route('/')
 def show_submit():
-  return render_template('home.html')
+  form = SubmitForm()
+  return render_template('home.html', form=form)
 
 @home.route('/', methods=['POST'])
 def submit():
   form = SubmitForm()
 
   if form.validate_on_submit():
-    print('Request')
-    print(request)
-    print(form.search.data)
-
-@home.route('/delete', methods=['DELETE'])
+    print(form.data)
+  return render_template('home.html', form=form)
