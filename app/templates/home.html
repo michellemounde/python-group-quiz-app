@@ -2,8 +2,12 @@
 
 {% block container %}
 <section>
-  <form>
-    <input type="text" name/>
+  <form method="POST" action="/home">
+    {{ form.csrf_token }}
+    <p>
+      {{ form.search.label }}
+      {{ form.search() }}
+    </p>
     <button type="submit">Submit</button>
   </form>
 </section>
