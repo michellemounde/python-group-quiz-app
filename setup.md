@@ -1,8 +1,7 @@
 # How to Setup project for Flask Backend with Jinja Templates
 
 ## Installations
-As per requirements.txt - Not sure if we need, werkzeug comes with flask
-Do we need auth? flask-login
+As per requirements.txt - Not sure if we need werkzeug as its inbuilt in flask
 Do we need a database? sqlalchemy, flask-sqlalchemy, alembic, flask-migrate
 
 ## Structure
@@ -24,7 +23,7 @@ pipenv
 .env
 setup imports through __init__.py's
 
-## Setup
+## Setup of Initial Project
 0. create .env(with SECRET KEY & SQLALCHEMY keys) and .flaskenv
 1. pipenv install -r requirements.txt
 2. setup config
