@@ -49,14 +49,13 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 In case of Pylance import errors on VSCode, try:
 1. Run:
+    - Open the command palette
+    - Go to Python Clear Cache and Reload
+2. Run:
     - pipenv --venv
     - Open the command palette
     - Go to Python Select Interpreter
     - Then manually enter the interpreter path as the Python interpreter
-    - This is in the command palette on VSCode
-2. Run:
-    - Open the command palette
-    - Go to Python Clear Cache and Reload
     - This is in the command palette on VSCode
 
 ## Usage
