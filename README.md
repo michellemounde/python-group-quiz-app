@@ -58,6 +58,17 @@ In case of Pylance import errors on VSCode, try:
     - Then manually enter the interpreter path as the Python interpreter
     - This is in the command palette on VSCode
 
+The above is also true for if Pycharm notifies you that there is no python interpreter configured! To solve via the Pycharm GUI:
+
+1. Get the location of your pipenv virtual environment by running 'pipenv --venv'
+2. Click configure python interpreter
+3. Click add New interpreter
+4. Click add local interpreter
+5. Click the 'Existing' radio buton, then the ... icon.
+6. Paste the location of the pipenv virtual environment
+7. Look for the bin folder to your corresponding virtual environment
+8. Select the file which corresponds to your version of python (for this case, python3.9) and hit OK
+
 ## Usage
 
 Provide instructions and examples for use. Include screenshots as needed.
